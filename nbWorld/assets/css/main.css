@@ -303,13 +303,23 @@ h6 {
 
 /* Navmenu - Mobile */
 @media (max-width: 1199px) {
-  .mobile-nav-toggle {
+  /* .mobile-nav-toggle {
     color: var(--nav-color);
     font-size: 28px;
     line-height: 0;
     margin-right: 20px;
     cursor: pointer;
     transition: color 0.3s;
+  } */
+  .mobile-nav-toggle {
+    position: absolute; /* Set consistent positioning */
+    top: 15px;          /* Align to the same top value */
+    right: 15px;        /* Align to the same right value */
+    color: var(--nav-color);
+    font-size: 28px;
+    line-height: 0;
+    z-index: 9999;      /* Ensure it stays above other elements */
+    transition: color 0.3s, transform 0.3s; /* Optional transition for effects */
   }
 
   .navmenu {
@@ -406,7 +416,7 @@ h6 {
     overflow: hidden;
   }
 
-  .mobile-nav-active .mobile-nav-toggle {
+  /* .mobile-nav-active .mobile-nav-toggle {
     color: #fff;
     position: absolute;
     font-size: 32px;
@@ -414,6 +424,15 @@ h6 {
     right: 15px;
     margin-right: 0;
     z-index: 9999;
+  } */
+  .mobile-nav-active .mobile-nav-toggle {
+    position: absolute; /* Same as above */
+    top: 15px;          /* Same top alignment */
+    right: 15px;        /* Same right alignment */
+    font-size: 32px;    /* Optional for slight differentiation */
+    z-index: 9999;      /* Matches the hamburger button */
+    color: #fff;        /* Optional color change for the close button */
+    transform: rotate(180deg); /* Optional: visual rotation */
   }
 
   .mobile-nav-active .navmenu {
@@ -743,7 +762,8 @@ section,
 
 .swiper {
   width: 100%;
-  height: 100vh; /* Full height for large devices */
+  height: 100vh;
+  padding-top: 40px; /* Full height for large devices */
 }
 
 .swiper-slide {
