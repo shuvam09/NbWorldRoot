@@ -694,7 +694,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 15px 0;
   scroll-margin-top: 77px;
   overflow: clip;
 }
@@ -703,7 +703,7 @@ section,
 # Global Section Titles
 --------------------------------------------------------------*/
 .section-title {
-  padding-bottom: 60px;
+  padding-bottom: 10px;
   position: relative;
 }
 
@@ -872,48 +872,6 @@ section,
 
 
 /*--------------------------------------------------------------
-# Call To Action Section
---------------------------------------------------------------*/
-.call-to-action {
-  padding: 80px 0;
-  position: relative;
-  clip-path: inset(0);
-}
-
-.call-to-action .container {
-  position: relative;
-  z-index: 3;
-}
-
-.call-to-action h3 {
-  color: var(--default-color);
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.call-to-action p {
-  color: var(--default-color);
-}
-
-.call-to-action .cta-btn {
-  font-family: var(--heading-font);
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 40px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px;
-  background: var(--accent-color);
-  color: #00dafe;
-}
-
-.call-to-action .cta-btn:hover {
-  background: color-mix(in srgb, var(--accent-color) 90%, white 15%);
-}
-
-/*--------------------------------------------------------------
 # Search box
 --------------------------------------------------------------*/
 .search-box {
@@ -930,11 +888,53 @@ section,
 }
 
 /*--------------------------------------------------------------
+# Basic Button Styles
+--------------------------------------------------------------*/
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #00dafe;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background-color: #007bff;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* Container for Buttons */
+.btn_container {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 10px; /* Space between buttons */
+  margin: 10px auto; /* Center the container on the page */
+}
+
+/* Responsive Layout: Stack Buttons Vertically on Small Screens */
+@media (max-width: 600px) {
+  .btn_container {
+    flex-direction: row; /* Ensure buttons are side-by-side even on smaller screens */
+  }
+}
+
+/*--------------------------------------------------------------
 # Gallery Section
 --------------------------------------------------------------*/
 
 /* Gallery container */
-.gallery {
+.gallerys {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
