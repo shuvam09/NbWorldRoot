@@ -1,10 +1,4 @@
-/**
-* Template Name: Selecao
-* Template URL: https://bootstrapmade.com/selecao-bootstrap-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 (function() {
   "use strict";
@@ -267,6 +261,7 @@
 
 })();
 
+//gallery modal
 const galleryItems = document.querySelectorAll('.gallery-item');
 const modal = document.getElementById('modal');
 const modalImage = document.getElementById('modalImage');
@@ -345,9 +340,9 @@ const slider = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  effect: 'coverflow', // Choose effect: 'coverflow', 'fade', 'cube', 'flip'
+  //effect: 'coverflow', // Choose effect: 'coverflow', 'fade', 'cube', 'flip'
   coverflowEffect: {
-    rotate: 50, // Rotation angle
+    //rotate: 50, // Rotation angle
     stretch: 0, // Space between slides
     depth: 100, // Perspective depth
     modifier: 1,
