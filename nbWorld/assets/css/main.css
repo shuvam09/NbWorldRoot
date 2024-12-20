@@ -1438,3 +1438,44 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
+
+
+
+/*--------------------------------------------------------------
+# more Section
+--------------------------------------------------------------*/
+
+.icon-container {
+  display: flex;
+  gap: 20px; /* Adjust spacing between icons */
+}
+
+.icon {
+  width: 80px; /* Adjust size */
+  height: auto;
+}
+
+/* Hover effect */
+.icon:hover {
+  transform: scale(1.1); /* Grows the icon slightly */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+/* Active/click effect */
+.icon:active {
+  transform: scale(0.95); /* Slightly shrinks on click */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Reduces shadow for a pressed effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .icon {
+    width: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon {
+    width: 40px;
+  }
+}
