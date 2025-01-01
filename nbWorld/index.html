@@ -240,22 +240,29 @@
           </div>
         </section>
 
-        <section id="videoGallery">
-          <h4>
-            <center>---VIDEOS---</center>
-          </h4>
-          <div class="gallerys">
-            <video class="gallery-item" data-src="assets/video/v1.mp4" controls muted>
-              <source src="assets/video/v1.mp4" type="video/mp4">
-            </video>
-            <video class="gallery-item" data-src="assets/video/v2.mp4" controls muted>
-              <source src="assets/video/v2.mp4" type="video/mp4">
-            </video>
-            <video class="gallery-item" data-src="assets/video/v3.mp4" controls muted>
-              <source src="assets/video/v3.mp4" type="video/mp4">
-            </video>
+        <section id="videoGallery" class="container py-4">
+          <h4 class="text-center mb-4">---VIDEOS---</h4>
+          <div class="row g-4"> <!-- g-4 adds gap between columns -->
+            <!-- YouTube Video 1 -->
+            <div class="col-lg-4 col-md-6 col-12">
+              <iframe class="w-100" height="315" src="https://www.youtube.com/embed/0geOjek9IvI"
+                title="JBL AUTHENTIC 300 ADVERTISEMENT | NB WORLD" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <!-- YouTube Video 2 -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <iframe class="w-100" height="315" src="https://www.youtube.com/embed/wuol80gToVs" title="CAFE ADVERTISEMENT | THE OBED CAFE AMTALA | NB WORLD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <!-- YouTube Video 3 -->
+            <div class="col-lg-4 col-md-6 col-12">
+              <iframe class="w-100" height="315" src="https://www.youtube.com/embed/pX7VRfeQE34" title="SALON ADVERTISEMENTS VIDEO | Glam And Glow | NB WORLD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
           </div>
         </section>
+
 
         <!-- Modal -->
         <div class="modal" id="modal">
@@ -477,9 +484,11 @@
               </div>
             </div>
             <div class="review-card">
-              <p class="review-text">"NB creation is a very nice graphic design company of West Bengal.They have worked on some my
+              <p class="review-text">"NB creation is a very nice graphic design company of West Bengal.They have worked
+                on some my
                 projects & logo. I would
-                recommend them to everyone because it's not only about the company but also the people.They are very friendly, gives
+                recommend them to everyone because it's not only about the company but also the people.They are very
+                friendly, gives
                 genuine guidance & work whole
                 heartedly."</p>
               <div class="review-stars">
@@ -487,7 +496,7 @@
                 <span class="star full"></span>
                 <span class="star full"></span>
                 <span class="star full"></span>
-                <span class="star empty"></span>
+                <span class="star full"></span>
               </div>
               <div class="reviewer-info">
                 <img src="assets/img/testimonials/testimonials-2.jpg" alt="Reviewer 3" class="reviewer-photo" />
